@@ -1,0 +1,16 @@
+{% extends 'school/homebase.html' %}
+{% block content %}
+<br>
+<br>
+<div class="jumbotron" style="margin-bottom:0px;">
+  <h1 class="display-4">Teacher's Panel</h1>
+  <p class="lead">Welcome to School Management System.</p>
+  <hr class="my-4">
+  <p>Please you can apply to to be employed as a teacher or login if u have been employed</p>
+  <p class="lead">
+    <a class="btn btn-danger btn-lg" href="{% url 'teacher_signup' %}" role="button">Apply Now</a>
+    <a class="btn btn-success btn-lg" href="{% url 'login_page' %}" role="button">Login</a>
+  </p>
+</div>
+{% endblock content %}
+
