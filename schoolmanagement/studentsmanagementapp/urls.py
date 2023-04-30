@@ -50,6 +50,7 @@ urlpatterns = [
     path("student/edit/<int:student_id>", hod_views.edit_student, name='edit_student'),
     path("course/edit/<int:course_id>", hod_views.edit_course, name='edit_course'),
     path("subject/edit/<int:subject_id>", hod_views.edit_subject, name='edit_subject'),
+    path("applicatiion_report", hod_views.applicatiion_report, name='applicatiion_report'),
 
     # Staff
     path("staff/home/", staff_views.staff_home, name='staff_home'),
@@ -96,5 +97,5 @@ urlpatterns = [
          name="student_view_notification"),
     path('student/view/result/', student_views.student_view_result,
          name='student_view_result'),
-
+     
 ]

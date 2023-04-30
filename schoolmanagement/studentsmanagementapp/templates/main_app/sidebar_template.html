@@ -210,7 +210,17 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    {% url 'applicatiion_report' as applicatiion_report %}
+                    <a href="{{applicatiion_report}}"
+                        class="nav-link {% if applicatiion_report == request.path %} active {% endif %}">
+                        <i class="nav-icon bi bi-book"></i>
+                        <p>
+                             Student application report
 
+                        </p>
+                    </a>
+                </li>
                 <li class="nav-item">
                     {% url 'admin_notify_staff' as admin_notify_staff %}
                     <a href="{{admin_notify_staff}}"

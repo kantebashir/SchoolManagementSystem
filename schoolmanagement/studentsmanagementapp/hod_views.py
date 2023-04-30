@@ -724,3 +724,26 @@ def delete_session(request, session_id):
         messages.error(
             request, "There are students assigned to this session. Please move them to another session.")
     return redirect(reverse('manage_session'))
+
+
+
+
+#Application report
+def applicatiion_report(request):
+    
+    application_report = StudentForm()
+
+    context={
+        "application_report": application_report,
+    }        
+    return render(request, "hod_template/application_report.html",context)
+
+
+
+# def manage_student(request):
+#     students = CustomUser.objects.filter(user_type=3)
+#     context = {
+#         'students': students,
+#         'page_title': 'Manage Students'
+#     }
+#     return render(request, "hod_template/manage_student.html", context)
