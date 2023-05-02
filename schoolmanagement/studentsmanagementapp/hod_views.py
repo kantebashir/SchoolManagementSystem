@@ -747,3 +747,8 @@ def applicatiion_report(request):
 #         'page_title': 'Manage Students'
 #     }
 #     return render(request, "hod_template/manage_student.html", context)
+
+
+
+
+
